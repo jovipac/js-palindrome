@@ -1,0 +1,12 @@
+@import "_colors.scss";
+/* simply assign the value */ 
+$body-bg: #eeeeee;
+
+/* or, use an existing variable */
+$theme-colors: (
+  primary: $indigo,
+  danger: $red
+);
+
+/* finally, import Bootstrap to set the changes! */
+@import "~bootstrap/scss/bootstrap";
