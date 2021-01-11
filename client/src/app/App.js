@@ -1,18 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import RouterOutlet from '../router/RouterOutlet'
-import AppNavbar from './components/AppNavbar'
-import AppFooter from './components/AppFooter'
+import AppNavbar from '@/AppNavbar'
+import AppFooter from '@/AppFooter'
+import { Provider } from 'react-redux'
+import store from '../store'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div id="App">
-        <AppNavbar/>
-        <RouterOutlet/>
-        <AppFooter/>
+      <div id='App'>
+        <Provider store={store}>
+          <AppNavbar />
+          <RouterOutlet />
+        </Provider>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

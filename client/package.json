@@ -7,7 +7,7 @@
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
     "dev": "webpack --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,13 +24,14 @@
   },
   "homepage": "https://github.com/jovipac/js-palindrome#readme",
   "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
-    "node-sass": "^5.0.0",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.4.3",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
     "sass-loader": "^10.1.0",
     "webpack": "^5.12.1",
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
     "@testing-library/jest-dom": "^5.11.8",
@@ -49,6 +51,7 @@
     "html-loader": "^1.3.2",
     "html-webpack-plugin": "^4.5.1",
     "jest": "^26.6.3",
+    "node-sass": "^5.0.0",
     "portfinder-sync": "0.0.2",
     "postcss": "^8.2.3",
     "postcss-loader": "^4.1.0",

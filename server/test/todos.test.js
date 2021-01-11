@@ -29,9 +29,7 @@ describe('GET /iecho 200', () => {
         done()
       })
   })
-})
 
-describe('GET /iecho 200', () => {
   it('Verifique si la cadena de texto es palindromo', (done) => {
     request(app)
       .get('/iecho')

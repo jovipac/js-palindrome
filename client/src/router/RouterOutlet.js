@@ -1,18 +1,18 @@
-import * as React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from '../app/components/Home';
-import Error404 from '../app/components/Error404';
-class RouterOutlet extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" component={Home} exact={true}/>
-          <Route component={Error404}/>
-        </Switch>
-      </BrowserRouter>
-    );
-  }
+import * as React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Error404 from '../app/components/Error404'
+import Main from '../app/modules/Home/Home'
+const RouterOutlet = () => {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path='/'>
+          <Main />
+        </Route>
+        <Route component={Error404} />
+      </Switch>
+    </BrowserRouter>
+  )
 }
 
-export default RouterOutlet;
+export default RouterOutlet
