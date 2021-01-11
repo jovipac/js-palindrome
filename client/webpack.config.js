@@ -67,6 +67,9 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    minimize: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'React Bootstrap App',

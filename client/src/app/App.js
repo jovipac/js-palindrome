@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import RouterOutlet from '../router/RouterOutlet'
-import AppNavbar from '@/AppNavbar'
-import AppFooter from '@/AppFooter'
+import AppNavbar from '../app/components/AppNavbar'
 import { Provider } from 'react-redux'
 import store from '../store'
 
