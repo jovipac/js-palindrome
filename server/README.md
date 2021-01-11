@@ -8,7 +8,7 @@ In the project directory, you can run:
 ### `npm run start`
 
 Runs the app in the development mode.\
-Open [http://localhost:80](http://localhost) to view it in the browser.
+Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
 
 The page show you a API swagger documentation.\
 You will also see activity in the console.\

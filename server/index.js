@@ -64,7 +64,7 @@ const onListening = () => {
  * Obtenga el puerto del entorno y guárdelo en Express.
  */
 
-const port = normalizePort(process.env.PORT || 80)
+const port = normalizePort(process.env.PORT || 4000)
 app.set('port', port)
 
 /**
