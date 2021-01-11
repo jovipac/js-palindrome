@@ -10,6 +10,7 @@ const app = express()
 app.use(cors())
 
 app.use(logger('dev'))
+
 // Lectura y parseo del body
 app.use(express.json())
 
