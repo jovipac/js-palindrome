@@ -1,0 +1,27 @@
+@import "_colors.scss";
+/* simply assign the value */ 
+$body-bg: #eeeeee;
+
+/* or, use an existing variable */
+$theme-colors: (
+  primary: $indigo,
+  danger: $red
+);
+
+.vertical-center {
+  min-height: 75%;
+  min-height: 75vh;
+}
+
+.especial-row {
+  padding-top: 1rem;
+}
+
+.especial-cell {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  border: 1px solid rgba(10, 10, 10, 0.6) !important;
+  border-radius: .35rem;
+}
+/* finally, import Bootstrap to set the changes! */
+@import "~bootstrap/scss/bootstrap";
